@@ -30,8 +30,8 @@ public class JDBCTransactionExample {
 			dbConnection.setAutoCommit(false);
 
 			preparedStatementInsert = dbConnection.prepareStatement(insertTableSQL);
-			preparedStatementInsert.setInt(1, 999);
-			preparedStatementInsert.setString(2, "Rohan999");
+			preparedStatementInsert.setInt(1, 111);
+			preparedStatementInsert.setString(2, "Rohan111");
 			preparedStatementInsert.setString(3, "system");
 			preparedStatementInsert.setTimestamp(4, getCurrentTimeStamp());
 			preparedStatementInsert.executeUpdate();
@@ -41,7 +41,7 @@ public class JDBCTransactionExample {
 			// preparedStatementUpdate.setString(1,
 			// "A very very long string caused db error");
 			preparedStatementUpdate.setString(1, "new value");
-			preparedStatementUpdate.setInt(2, 999);
+			preparedStatementUpdate.setInt(2, 111);
 			preparedStatementUpdate.executeUpdate();
 			System.out.println("Record Updated!");
 
