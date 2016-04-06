@@ -35,6 +35,7 @@ public class JDBCTransactionExample {
 			preparedStatementInsert.setString(3, "system");
 			preparedStatementInsert.setTimestamp(4, getCurrentTimeStamp());
 			preparedStatementInsert.executeUpdate();
+			System.out.println("Record Inserted!");
 
 			preparedStatementUpdate = dbConnection.prepareStatement(updateTableSQL);
 			// preparedStatementUpdate.setString(1,
@@ -42,6 +43,7 @@ public class JDBCTransactionExample {
 			preparedStatementUpdate.setString(1, "new value");
 			preparedStatementUpdate.setInt(2, 999);
 			preparedStatementUpdate.executeUpdate();
+			System.out.println("Record Updated!");
 
 			dbConnection.commit();
 
