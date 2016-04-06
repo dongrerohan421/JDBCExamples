@@ -29,12 +29,12 @@ public class JDBCPreparedStatementDeleteExample {
 		Connection dbConnection = null;
 		PreparedStatement preparedStatement = null;
 
-		String updateTableSQL = "DELETE FROM DBUSER1 WHERE USER_ID = ?";
+		String deleteTableSQL = "DELETE FROM DBUSER1 WHERE USER_ID = ?";
 
 		try {
 
 			dbConnection = getDBConnection();
-			preparedStatement = dbConnection.prepareStatement(updateTableSQL);
+			preparedStatement = dbConnection.prepareStatement(deleteTableSQL);
 
 			preparedStatement.setInt(1, 11);
 
