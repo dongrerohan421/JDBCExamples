@@ -3,6 +3,7 @@ package com.jdbc.connection.oracle;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class JDBCPreparedStatementDeleteExample {
@@ -39,7 +40,7 @@ public class JDBCPreparedStatementDeleteExample {
 			preparedStatement.setInt(1, 11);
 
 			// execute delete SQL statement
-			preparedStatement.executeUpdate();
+			ResultSet rs = preparedStatement.executeQuery();
 
 			System.out.println("Record is deleted from DBUSER1 table!");
 
