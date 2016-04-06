@@ -46,10 +46,14 @@ public class JDBCPreparedStatementBatchUpdateExample {
 			preparedStatement.setString(3, "system");
 			preparedStatement.setTimestamp(4, getCurrentTimeStamp());
 
+			preparedStatement.addBatch();
+
 			preparedStatement.setInt(1, 102);
 			preparedStatement.setString(2, "Rohan102");
 			preparedStatement.setString(3, "system");
 			preparedStatement.setTimestamp(4, getCurrentTimeStamp());
+
+			preparedStatement.addBatch();
 
 			preparedStatement.setInt(1, 103);
 			preparedStatement.setString(2, "Rohan103");
