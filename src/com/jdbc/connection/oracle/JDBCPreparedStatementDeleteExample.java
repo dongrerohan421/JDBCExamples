@@ -38,7 +38,7 @@ public class JDBCPreparedStatementDeleteExample {
 
 			preparedStatement.setInt(1, 11);
 
-			// execute update SQL statement
+			// execute delete SQL statement
 			preparedStatement.executeUpdate();
 
 			System.out.println("Record is deleted from DBUSER1 table!");
