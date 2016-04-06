@@ -42,7 +42,7 @@ public class JDBCPreparedStatementCreateExample {
 			// execute create SQL statement
 			preparedStatement.executeUpdate();
 
-			System.out.println("Table \"dbuser\" is created!");
+			System.out.println("Table \"dbuser1\" is created!");
 
 		} catch (SQLException e) {
 

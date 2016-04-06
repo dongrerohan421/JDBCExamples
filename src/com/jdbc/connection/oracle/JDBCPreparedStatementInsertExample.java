@@ -47,7 +47,7 @@ public class JDBCPreparedStatementInsertExample {
 			// execute insert SQL statement
 			preparedStatement.executeUpdate();
 
-			System.out.println("Record is inserted into DBUSER table!");
+			System.out.println("Record is inserted into DBUSER1 table!");
 
 		} catch (SQLException e) {
 
